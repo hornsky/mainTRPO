@@ -13,7 +13,7 @@ float Division(float x, float y)
 {
 	if (y == 0)
 	{	
-		cout << "test_Division isn't possible by ";
+		cout << "test_Division : isn't possible by zero" << endl;
 		return 0;
 	}
 	else
