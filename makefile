@@ -8,11 +8,12 @@ main.o:
 test.o:
 	g++ -std=c++11 test/test.cpp -o test/test -lncurses
 
-test:
+testrun:
 	./test/test
 	
 run:
 	.src/main
+
 
 .PHONY: clean
 
