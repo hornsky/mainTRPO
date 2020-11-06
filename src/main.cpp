@@ -15,9 +15,9 @@ float Addition();
 float Subtraction();
 float Multiplication();
 float Division();
+float Exponentiation();
 unsigned int Factorial();
 unsigned int body_of_Factorial();
-float Exponentiation();
 
 int main()
 {
