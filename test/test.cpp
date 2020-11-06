@@ -46,3 +46,16 @@ TEST_CASE("test_Division")
     REQUIRE(Division(-8,0) == 0); // + text error
     cout << "test_Division is correct" << endl;
 }
+
+TEST_CASE("test_Factorial")
+{
+    REQUIRE(Factorial(55) == 1); //0
+    cout << "Number isn't unsigned or Your factorial will be greater than 4.294.967.295. Try using a lower number." << endl;
+    REQUIRE(Factorial(-5) == 1); //0
+    cout << "Number isn't unsigned or Your factorial will be greater than 4.294.967.295. Try using a lower number." << endl;
+    REQUIRE(Factorial(0) == 1);
+    REQUIRE(Factorial(12) == 479001600);
+    REQUIRE(Factorial(3) == 6);
+    REQUIRE(Factorial(1) == 1);
+    cout << "test_Factorial is correct" << endl;
+}

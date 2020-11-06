@@ -19,3 +19,24 @@ float Division(float x, float y)
 	else
 		return x / y;
 }
+
+unsigned int Factorial(unsigned int b)
+{
+	return ((0 < b) && (b < 13)) ? Factorial(b - 1) * b : 1;
+}
+
+unsigned int body_of_Factorial()
+{
+	unsigned int b;
+	cout << "Enter unsigned int number : ";
+	cin >> b;
+
+	if ((b >= 13) || (b < 0))
+	{
+		cout << "Number isn't unsigned or Your factorial will be greater than 4.294.967.295. Try using a lower number." << endl;
+		return 0;
+	}
+
+	cout << "Your Factorial of " << b << " is ";
+	return Factorial(b);
+}
