@@ -57,5 +57,15 @@ TEST_CASE("test_Factorial")
     REQUIRE(Factorial(12) == 479001600);
     REQUIRE(Factorial(3) == 6);
     REQUIRE(Factorial(1) == 1);
-    cout << "test_Factorial : correct" << endl;
+    cout << "test_Factorial : correct\n" << endl;
+}
+
+TEST_CASE("test_Exponentiation")
+{
+    REQUIRE(Exponentiation(0,5) == 0);
+    REQUIRE(Exponentiation(3,3) == 27);
+    REQUIRE(Exponentiation(9,3) == 729);
+    REQUIRE(Exponentiation(1,0) == 1);
+    REQUIRE(Exponentiation(15,0) == 1);
+    cout << "test_Exponentiation : correct" << endl;
 }

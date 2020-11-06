@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stdlib.h>
+#include <math.h>
 
 using namespace std;
 
@@ -39,4 +40,9 @@ unsigned int body_of_Factorial()
 
 	cout << "Your Factorial of " << b << " is ";
 	return Factorial(b);
+}
+
+float Exponentiation(float x, float y)
+{
+	return pow(x,y);
 }
