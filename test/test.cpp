@@ -1,0 +1,48 @@
+#include <iostream>
+#include <stdlib.h>
+#include "../src/func.cpp"
+
+#define CATCH_CONFIG_MAIN
+#include "catch.hpp"
+
+TEST_CASE("test_Addition")
+{
+    REQUIRE(Addition(3,3) == 6);
+    REQUIRE(Addition(0,3) == 3);
+    REQUIRE(Addition(-10,0) == -10);
+    REQUIRE(Addition(9,0) == 9);
+    REQUIRE(Addition(-3,-3) == -6);
+    cout << "test_Addition is correct\n" << endl;
+}
+
+TEST_CASE("test_Subtraction")
+{
+    REQUIRE(Subtraction(3,3) == 0);
+    REQUIRE(Subtraction(0,3) == -3);
+    REQUIRE(Subtraction(-10,0) == -10);
+    REQUIRE(Subtraction(9,0) == 9);
+    REQUIRE(Subtraction(0,9) == -9);
+    REQUIRE(Subtraction(-3,-3) == 0);
+    cout << "test_Subtraction is correct\n" << endl;
+}
+
+TEST_CASE("test_Multiplication")
+{
+    REQUIRE(Multiplication(3,3) == 9);
+    REQUIRE(Multiplication(0,3) == 0);
+    REQUIRE(Multiplication(22,22) == 484);
+    REQUIRE(Multiplication(9,0) == 0);
+    REQUIRE(Multiplication(-3,-3) == 9);
+    REQUIRE(Multiplication(-7,3) == -21);
+    cout << "test_Multiplication is correct\n" << endl;
+}
+
+TEST_CASE("test_Division")
+{
+    REQUIRE(Division(3,3) == 1);
+    REQUIRE(Division(0,3) == 0);
+    REQUIRE(Division(22,22) == 1);
+    REQUIRE(Division(-8,4) == -2);
+    REQUIRE(Division(-8,0) == 0); // + text error
+    cout << "test_Division is correct" << endl;
+}
