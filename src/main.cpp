@@ -7,12 +7,15 @@
 using namespace std;
 
 float x, y;
+unsigned int b;
 char c;
 
 float Addition();
 float Subtraction();
 float Multiplication();
 float Division();
+unsigned int Factorial();
+unsigned int body_of_Factorial();
 
 int main()
 {
