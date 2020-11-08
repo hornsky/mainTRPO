@@ -11,9 +11,6 @@ test.o:
 testrun:
 	./test/test
 
-run:
-	./src/main
-
 .PHONY: clean
 
 clean:
