@@ -10,9 +10,9 @@ test.o:
 
 testrun:
 	./test/test
-	
+
 run:
-	.src/main
+	./src/main
 
 .PHONY: clean
 
