@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <math.h>
 
+#include "func.h"
+
 using namespace std;
 
 float Addition(float x, float y) {return x + y;}

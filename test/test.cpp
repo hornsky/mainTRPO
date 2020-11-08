@@ -1,6 +1,8 @@
 #include <iostream>
 #include <stdlib.h>
-#include "../src/func.cpp"
+#include "../src/func.h"
+
+using namespace std;
 
 #define CATCH_CONFIG_MAIN
 #include "catch.hpp"
